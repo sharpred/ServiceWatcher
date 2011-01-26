@@ -56,18 +56,6 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Inspect")>  _
-        Public Property ServiceAction() As String
-            Get
-                Return CType(Me("ServiceAction"),String)
-            End Get
-            Set
-                Me("ServiceAction") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Tomcat6")>  _
         Public Property TargetService() As String
             Get
@@ -87,6 +75,30 @@ Namespace My
             End Get
             Set
                 Me("OverrideDisabled") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("deactivate")>  _
+        Public Property ServiceAction() As String
+            Get
+                Return CType(Me("ServiceAction"),String)
+            End Get
+            Set
+                Me("ServiceAction") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("5000")>  _
+        Public Property WaitValue() As Long
+            Get
+                Return CType(Me("WaitValue"),Long)
+            End Get
+            Set
+                Me("WaitValue") = value
             End Set
         End Property
     End Class
