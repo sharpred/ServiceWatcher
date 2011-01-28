@@ -3,11 +3,14 @@ Imports System.ServiceProcess
 Imports System.Diagnostics
 Imports System.Threading
 Imports log4net
-
+Imports System.Reflection
 Module Watcher
 
-    Sub Main()
+    Private log As log4net.ILog = LogManager.GetLogger("Watcher")
 
+
+    Sub Main()
+        log4net.Config.XmlConfigurator.Configure()
         Dim ServiceName As String = My.Settings.TargetService
         Dim serviceaction As String = LCase(My.Settings.ServiceAction)
         Dim inspection As String = InspectService(ServiceName, serviceaction)
@@ -22,11 +25,8 @@ Module Watcher
         Dim scTemp As ServiceController
         Dim servicestatus As String = Nothing
         Dim timeout As New TimeSpan(My.Settings.WaitValue)
-        Dim log As log4net.ILog
         Dim errormessage As String = Nothing
         Dim sc As New ServiceController
-        log4net.Config.XmlConfigurator.Configure()
-        log = log4net.LogManager.GetLogger("ServiceWatcher")
         Try
             For Each scTemp In scServices
                 If scTemp.ServiceName = servicename Then

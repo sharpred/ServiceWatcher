@@ -92,7 +92,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("5000")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("10000")>  _
         Public Property WaitValue() As Long
             Get
                 Return CType(Me("WaitValue"),Long)

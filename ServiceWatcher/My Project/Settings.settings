@@ -12,7 +12,7 @@
       <Value Profile="(Default)">deactivate</Value>
     </Setting>
     <Setting Name="WaitValue" Type="System.Int64" Scope="User">
-      <Value Profile="(Default)">5000</Value>
+      <Value Profile="(Default)">10000</Value>
     </Setting>
   </Settings>
 </SettingsFile>

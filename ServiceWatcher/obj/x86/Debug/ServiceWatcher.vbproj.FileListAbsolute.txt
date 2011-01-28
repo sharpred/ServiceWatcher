@@ -9,3 +9,5 @@ F:\Users\pryan.METICULUSOFFICE\Documents\Visual Studio 2010\Projects\Personal Pr
 F:\Users\pryan.METICULUSOFFICE\Documents\Visual Studio 2010\Projects\Personal Projects\ServiceWatcher\ServiceWatcher\obj\x86\Debug\ServiceWatcher.exe
 F:\Users\pryan.METICULUSOFFICE\Documents\Visual Studio 2010\Projects\Personal Projects\ServiceWatcher\ServiceWatcher\obj\x86\Debug\ServiceWatcher.xml
 F:\Users\pryan.METICULUSOFFICE\Documents\Visual Studio 2010\Projects\Personal Projects\ServiceWatcher\ServiceWatcher\obj\x86\Debug\ServiceWatcher.pdb
+F:\Users\pryan.METICULUSOFFICE\Documents\Visual Studio 2010\Projects\Personal Projects\ServiceWatcher\ServiceWatcher\bin\Debug\log4net.dll
+F:\Users\pryan.METICULUSOFFICE\Documents\Visual Studio 2010\Projects\Personal Projects\ServiceWatcher\ServiceWatcher\bin\Debug\log4net.xml
